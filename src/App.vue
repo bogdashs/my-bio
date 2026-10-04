@@ -300,11 +300,11 @@ onUnmounted(() => {
           </div>
           <div class="spec-entry" @click="copyText('C23, C++20, x86 ASM, Vue 3', 'Стек')">
             <span class="spec-name">Стек</span>
-            <span class="spec-value hover-copy">C23, C++20, x86 ASM, Vue 3 📋</span>
+            <span class="spec-value hover-copy">C, C++, x86 ASM, Vue 3, CSS, HTML, Python3, JavaScript, Java📋</span>
           </div>
           <div class="spec-entry" @click="copyText('Ghostty, Kitty, CLion, Neovim', 'Инструменты')">
             <span class="spec-name">Инструменты</span>
-            <span class="spec-value hover-copy">Ghostty, Kitty, CLion, Neovim 📋</span>
+            <span class="spec-value hover-copy">WebStorm, Kitty, CLion, Micro 📋</span>
           </div>
         </div>
 
