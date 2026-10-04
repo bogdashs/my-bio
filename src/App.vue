@@ -50,7 +50,6 @@ function getLangColor(lang) {
   return LANG_COLORS[lang] || '#8b949e'
 }
 
-// 3. ПАРСЕР РЕПОЗИТОРИЕВ С GITHUB
 const repos = ref([])
 const isLoadingRepos = ref(true)
 const repoError = ref(null)
@@ -220,13 +219,11 @@ onUnmounted(() => {
 
 <template>
   <div class="app-root">
-    <!-- Свечение от курсора мыши -->
     <div
         class="cursor-glow"
         :style="{ left: mouseX + 'px', top: mouseY + 'px' }"
     ></div>
 
-    <!-- Тост-уведомление копирования -->
     <transition name="toast">
       <div v-if="copyNotice" class="toast-notice">
         {{ copyNotice }}
@@ -291,9 +288,9 @@ onUnmounted(() => {
 
       <!-- 1. WHOAMI -->
       <section v-if="currentSection === 'whoami'" class="section-view">
-        <h1 class="title-primary">Системные эксперименты и архитектура</h1>
+        <h1 class="title-primary">Фронтенд / КиберБез</h1>
         <p class="text-secondary lead">
-          Фокус на низкоуровневой разработке (C / C++), устройстве операционных систем, языковых рантаймах и анализе производительности инфраструктуры.
+          Фронтенд различных сайтов (vue/css/html/javascript), так-же кибер безопасность (c/c++) ai (python)
         </p>
 
         <div class="surface-box specs-wrap">
