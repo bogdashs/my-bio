@@ -56,9 +56,6 @@ const isLoadingRepos = ref(true)
 const repoError = ref(null)
 
 async function fetchGithubRepos() {
-  isLoadingRepos.value = true
-  repoError.value = null
-
   try {
     const res = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=14`)
     if (!res.ok) throw new Error(`HTTP ${res.status}`)
